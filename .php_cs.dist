@@ -144,7 +144,8 @@ $excludes = [
     'storage',
     'node_modules',
     'vendor',
-    'bower_components'
+    'bower_components',
+    'resources/lang'
 ];
 
 return PhpCsFixer\Config::create()
