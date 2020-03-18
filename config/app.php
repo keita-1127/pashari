@@ -177,6 +177,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // ローカル環境でのみ有効にするプロバイダー
+        App\Providers\LocalServiceProvider::class,
     ],
 
     /*
