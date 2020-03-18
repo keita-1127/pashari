@@ -9,11 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "ext-pdo": "*",
         "caouecs/laravel-lang": "~4.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "ext-pdo": "*"
+        "thecodingmachine/safe": "^1.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
@@ -22,7 +23,8 @@
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+        "thecodingmachine/phpstan-safe-rule": "^1.0"
     },
     "config": {
         "optimize-autoloader": true,
