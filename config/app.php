@@ -179,6 +179,9 @@ return [
 
         // ローカル環境でのみ有効にするプロバイダー
         App\Providers\LocalServiceProvider::class,
+
+        // カスタムバリデータ
+        App\Services\Validation\ServiceProvider::class,
     ],
 
     /*
