@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace App\Providers;
 
+use Barryvdh\Debugbar\Facade;
 use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
@@ -22,6 +23,7 @@ class LocalServiceProvider extends ServiceProvider
      */
     protected $providers = [
         IdeHelperServiceProvider::class,
+        \Barryvdh\Debugbar\ServiceProvider::class,
     ];
 
     /**
@@ -30,6 +32,7 @@ class LocalServiceProvider extends ServiceProvider
      * @var array
      */
     protected $aliases = [
+        'Debugbar' => Facade::class,
     ];
 
     /**
