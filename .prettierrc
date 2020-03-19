@@ -1,0 +1,18 @@
+{
+    "parser": "php",
+    "printWidth": 130,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid",
+    "filepath": "undefined",
+    "requirePragma": false,
+    "insertPragma": false,
+    "proseWrap": "preserve",
+    "trailingCommaPHP": "none",
+    "braceStyle": "psr-2"
+}
