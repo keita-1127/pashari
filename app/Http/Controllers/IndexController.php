@@ -18,8 +18,8 @@ class IndexController extends Controller
     /**
      * トップページ
      *
-     * @return Factory|View
      * @throws BindingResolutionException
+     * @return Factory|View
      */
     public function index()
     {
