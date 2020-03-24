@@ -5,11 +5,23 @@ includes:
   - ./vendor/phpstan/phpstan-deprecation-rules/rules.neon
   - ./vendor/pepakriz/phpstan-exception-rules/extension.neon
   - ./vendor/slam/phpstan-extensions/conf/slam-rules.neon
+  - ./vendor/timeweb/phpstan-enum/extension.neon
+  - ./vendor/phpstan/phpstan-doctrine/extension.neon
+  - ./vendor/phpstan/phpstan-phpunit/extension.neon
+  - ./vendor/ekino/phpstan-banned-code/extension.neon
+  - ./vendor/phpstan/phpstan-mockery/extension.neon
+  - ./vendor/finwe/phpstan-faker/extension.neon
+  - ./vendor/matla/phpstancs/extension.neon
+  - vendor/mhujer/phpstan-consistence/rules.neon
 
 parameters:
 
   paths:
     - app
+    - tests
+
+  phpstancs:
+    runCS: false
 
   # The level 8 is the highest level
   level: max
