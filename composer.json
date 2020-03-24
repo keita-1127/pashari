@@ -24,6 +24,7 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
         "barryvdh/laravel-ide-helper": "^2.6",
+        "ergebnis/phpstan-rules": "^0.14.4",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.9",
         "laravel/dusk": "^5.10",
@@ -31,8 +32,12 @@
         "nunomaduro/collision": "^3.0",
         "nunomaduro/larastan": "^0.5.4",
         "orchestra/testbench": "^4.0",
+        "pepakriz/phpstan-exception-rules": "^0.10.1",
+        "phpstan/phpstan-deprecation-rules": "^0.12.2",
+        "phpstan/phpstan-strict-rules": "^0.12.2",
         "phpunit/phpunit": "^8.0",
         "roave/security-advisories": "dev-master",
+        "slam/phpstan-extensions": "^5.0",
         "thecodingmachine/phpstan-safe-rule": "^1.0"
     },
     "config": {
