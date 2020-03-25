@@ -14,6 +14,7 @@ includes:
   - ./vendor/matla/phpstancs/extension.neon
   - ./vendor/phpstan/phpdoc-parser/phpstan.neon
   - ./vendor/phpstan/phpstan-webmozart-assert/extension.neon
+  - ./vendor/grzesie2k/phpstan-gql-rule/rules.neon
 
 parameters:
 

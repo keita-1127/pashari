@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37aa05e0d19e288641c038b7db502b51",
+    "content-hash": "ac50aa7e3d7728fa0361e092f46c9ff3",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -5117,6 +5117,48 @@
                 "fixtures"
             ],
             "time": "2019-12-12T13:22:17+00:00"
+        },
+        {
+            "name": "grzesie2k/phpstan-gql-rule",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Grzesie2k/phpstan-gql-rule.git",
+                "reference": "4def77341759896064dca6749845d03617fb9e34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Grzesie2k/phpstan-gql-rule/zipball/4def77341759896064dca6749845d03617fb9e34",
+                "reference": "4def77341759896064dca6749845d03617fb9e34",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nikic/php-parser": "^4.3",
+                "phpstan/phpstan": "^0.12.3",
+                "webonyx/graphql-php": "^0.13.8"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grzesie2k\\PHPStan\\GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grzegorz Kielak",
+                    "email": "grzegorz@kielak.me"
+                }
+            ],
+            "description": "PHPStan rules for GraphQL",
+            "time": "2020-01-02T13:41:55+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
