@@ -1,20 +1,19 @@
 includes:
   - ./vendor/nunomaduro/larastan/extension.neon
   - ./vendor/phpstan/phpstan-strict-rules/rules.neon
-  - ./vendor/ergebnis/phpstan-rules/rules.neon
-  - ./vendor/phpstan/phpstan-deprecation-rules/rules.neon
-  - ./vendor/pepakriz/phpstan-exception-rules/extension.neon
-  - ./vendor/slam/phpstan-extensions/conf/slam-rules.neon
-  - ./vendor/timeweb/phpstan-enum/extension.neon
-  - ./vendor/phpstan/phpstan-doctrine/extension.neon
-  - ./vendor/phpstan/phpstan-phpunit/extension.neon
-  - ./vendor/ekino/phpstan-banned-code/extension.neon
+  - ./vendor/matla/phpstancs/extension.neon
   - ./vendor/phpstan/phpstan-mockery/extension.neon
   - ./vendor/finwe/phpstan-faker/extension.neon
-  - ./vendor/matla/phpstancs/extension.neon
   - ./vendor/phpstan/phpdoc-parser/phpstan.neon
   - ./vendor/phpstan/phpstan-webmozart-assert/extension.neon
   - ./vendor/grzesie2k/phpstan-gql-rule/rules.neon
+  - ./vendor/timeweb/phpstan-enum/extension.neon
+  - ./vendor/phpstan/phpstan-doctrine/extension.neon
+  - ./vendor/phpstan/phpstan-phpunit/extension.neon
+  - ./vendor/phpstan/phpstan-deprecation-rules/rules.neon
+  - ./vendor/pepakriz/phpstan-exception-rules/extension.neon
+  - ./vendor/slam/phpstan-extensions/conf/slam-rules.neon
+  - ./vendor/ekino/phpstan-banned-code/extension.neon
 
 parameters:
 
