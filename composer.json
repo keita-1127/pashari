@@ -19,6 +19,7 @@
         "laravelcollective/html": "^6.1",
         "laravelcollective/remote": "^6.1",
         "myclabs/php-enum": "^1.7",
+        "rebing/graphql-laravel": "^4.0",
         "thecodingmachine/safe": "^1.0",
         "webmozart/assert": "^1.7"
     },
