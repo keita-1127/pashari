@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace App\Services\Validation;
 
+use Illuminate\Contracts\Translation\Translator;
+
 /**
  * + ​* Class ServiceProvide
  *
@@ -18,9 +20,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->validator->resolver(function ($translator, $data, $rules, $messages, $customAttributes) {
-            return new Validator($translator, $data, $rules, $messages, $customAttributes);
-        });
+        $this->app['validator']->resolver(
+            function (Translator $translator, array $data, array $rules, array $messages = [], array $attributes = []) {
+                return new Validator($translator, $data, $rules, $messages, $attributes);
+            }
+        );
     }
 
     /**

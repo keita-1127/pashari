@@ -35,11 +35,29 @@ parameters:
     uncheckedExceptions:
       - LogicException
       - PHPUnit\Framework\Exception
+      - Illuminate\Contracts\Container\BindingResolutionException
 
   ignoreErrors:
-    - '#Unsafe usage of new static#'
+    - '#Abstract class [a-zA-Z0-9\\_]+ should start with "Abstract" prefix#'
+    - '#Trait [a-zA-Z0-9\\_]+ should end with "Trait" suffix#'
+    - '#Class [a-zA-Z0-9\\_]+ should be written with ::class notation, string found#'
+    - '#Dynamic call to static method Illuminate\\Foundation\\Application::isLocal()#'
+    - '#Anonymous function should have native return typehint "[a-zA-Z0-9\\_]+"#'
+    -
+      message: '#Fetching deprecated class constant CAPABILITY of class [a-zA-Z0-9\\_]+#'
+      path: tests/DuskTestCase.php
+    -
+      message: '#Call to method [a-zA-Z0-9\\_]+::assertTrue\(\) with true will always evaluate to true#'
+      path: tests/Unit/ExampleTest.php
+    -
+      message: '#Missing @throws Throwable annotation#'
+      path: tests/Browser/ExampleTest.php
+
+
 
   excludes_analyse:
+    - app/Providers/HorizonServiceProvider.php
+    - tests/Bootstrap.php
 
   checkMissingIterableValueType: false
 

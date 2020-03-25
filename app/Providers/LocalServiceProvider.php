@@ -64,7 +64,7 @@ class LocalServiceProvider extends ServiceProvider
      */
     protected function registerProviders(): void
     {
-        if (!empty($this->providers)) {
+        if (!isset($this->providers) || false == $this->providers) {
             foreach ($this->providers as $provider) {
                 $this->app->register($provider);
             }
@@ -78,10 +78,11 @@ class LocalServiceProvider extends ServiceProvider
      */
     protected function registerAliases(): void
     {
-        if (!empty($this->aliases)) {
+        if (!isset($this->aliases) || false == $this->aliases) {
             $loader = AliasLoader::getInstance();
 
             foreach ($this->aliases as $alias => $facade) {
+                /** @var string $alias */
                 $loader->alias($alias, $facade);
             }
         }

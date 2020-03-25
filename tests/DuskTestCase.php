@@ -17,6 +17,7 @@ abstract class DuskTestCase extends BaseTestCase
      * Prepare for Dusk test execution.
      *
      * @beforeClass
+     * @throws \RuntimeException
      * @return void
      */
     public static function prepare(): void
