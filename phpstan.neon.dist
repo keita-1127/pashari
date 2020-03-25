@@ -12,7 +12,8 @@ includes:
   - ./vendor/phpstan/phpstan-mockery/extension.neon
   - ./vendor/finwe/phpstan-faker/extension.neon
   - ./vendor/matla/phpstancs/extension.neon
-  - vendor/mhujer/phpstan-consistence/rules.neon
+  - ./vendor/phpstan/phpdoc-parser/phpstan.neon
+  - ./vendor/phpstan/phpstan-webmozart-assert/extension.neon
 
 parameters:
 
@@ -21,7 +22,7 @@ parameters:
     - tests
 
   phpstancs:
-    runCS: false
+    runCS: true
 
   # The level 8 is the highest level
   level: max
